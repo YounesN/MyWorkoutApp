@@ -10,7 +10,28 @@
 <ion-content padding>
   <h3>Workout App</h3>
 
-  
+  <ion-list>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <ion-item>
+      <ion-label floating>Push-up</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Sit-up</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Squat</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div text-center>
+    <button ion-button icon-right>
+      Add Workout 
+      <ion-icon name="add-circle"></ion-icon>
+    </button>
+  </div>
 </ion-content>
