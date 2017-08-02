@@ -14,22 +14,22 @@
 
     <ion-item>
       <ion-label floating>Push-up</ion-label>
-      <ion-input type="text" value=""></ion-input>
+      <ion-input [(ngModel)]="pushup" type="text" value=""></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Sit-up</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input [(ngModel)]="situp" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Squat</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input [(ngModel)]="squat" type="text"></ion-input>
     </ion-item>
   </ion-list>
 
   <div text-center>
-    <button ion-button icon-right>
+    <button ion-button icon-right (click)='addWorkout()'>
       Add Workout 
       <ion-icon name="add-circle"></ion-icon>
     </button>
