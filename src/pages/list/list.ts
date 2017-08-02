@@ -21,9 +21,8 @@ export class ListPage {
         .catch(e => console.log("Error executing sql query", e));
       })
       .catch(e => console.log("Error opening database", e));
+      this.refresh();
     });
-
-    //this.refresh();
   }
 
   refresh() {
